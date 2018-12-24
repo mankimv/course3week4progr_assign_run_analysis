@@ -43,10 +43,7 @@ Script description:
 5) All the variables in scope within corresponding groups were summarised - summarise() - and averaged through mean() function.
 
 Tidy data:
-Resulting data set needs to be tidy (as per the paper of Hadley Wickham, Tidy Data, Journal of Statistical Software August 2014, Volume 59, Issue 10.):
-
+Resulping data set needs to be tidy (as per the paper of Hadley Wickham, Tidy Data, Journal of Statistical Software August 2014, Volume 59, Issue 10.):
 	1) Through the design of the data collection, processing and subsequent recording process each variable is stored in a separate column describing its parameters (e.g., domain, type of acceleration, axes etc). Thus, each variable forms a column and there are no duplicate columns.
-	
 	2) Through the design of the experiment, 30 volunteers each perfoming 6 activities several iterations. Having averaged by subject and then by activity the resulting dataset has dimensions of [180, 68] (please see rationale for 66 above in the Raw data) where each row represents an observation and only 1 observation is assigned to 1 row. Hence the dataset complies with the 2nd principle: Each observation forms a row.
-	
-	3) The unit of observation (body motion) is 'parsed' (i.e., split by components, like linear/angular acceleration, axes, etc)  within the only table and its design also avoids any duplication of the same data pertinent to body motion. This tackles an issue of having multiple types of observation units in 1 table. Hence the data set is automatically compliant with the 3rd principle of tidy data: Each type of observational unit forms a table.
+	3) The unit of observation (body motion) is 'parsed' within the only table and its design also avoids any duplication of the same data pertinent to body motion. This tackles an issue of having multiple types of observation units in 1 table. Hence the data set is compliant with the 3rd principle of tidy data: Each type of observational unit forms a table.
