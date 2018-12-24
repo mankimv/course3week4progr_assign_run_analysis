@@ -3,10 +3,7 @@ course 3 week 4 program assignment run_analysis body motion Samsung Galaxy data
 
 Experimental design and background: 
 
-An experiment was conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto (Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
+An experiment was conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto (Smartlab - Non Linear Complex Systems Laboratory DITEN - Università degli Studi di Genova. Via Opera Pia 11A, I-16145, Genoa, Italy. activityrecognition@smartlab.ws
 www.smartlab.ws). This experiment was aimed at Human Activity Recognition Using Smartphones Dataset and was focused on collecting statistical data on linear and angular body acceleration measured within a group of 30 volunteers. Each person performing six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 Further details of the experiment can be obtained from read.me available at 
@@ -28,9 +25,8 @@ Data processed by the experiment:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Raw data for the course project assignment.
-Item 4 (above) variables representing mean and standard deviation of respective experimental raw and processed data.
-
-The following additional variables were excluded from the current analysis, although they carry mean context in their descriptions:
+- Item 4 (above) variables representing mean and standard deviation of respective experimental raw and processed data.
+- The following additional variables were excluded from the current analysis, although they carry mean context in their descriptions:
 a)meanFreq() (items nr 294-296 and 452-454 as per features_info.txt) as representing weighted average as opposed to average value as prescribed by the project requirements
 b)all angle functions (items nr 555-561 as per features_info.txt) - being functions of Mean values, not mean values by themselves hence falling out of the project scope.
 In total, by applying the above principles, the total number of variables in scope for further analysis is 66.
@@ -43,7 +39,8 @@ Script description:
 5) All the variables in scope within corresponding groups were summarised - summarise() - and averaged through mean() function.
 
 Tidy data:
-Resulping data set needs to be tidy (as per the paper of Hadley Wickham, Tidy Data, Journal of Statistical Software August 2014, Volume 59, Issue 10.):
-	1) Through the design of the data collection, processing and subsequent recording process each variable is stored in a separate column describing its parameters (e.g., domain, type of acceleration, axes etc). Thus, each variable forms a column and there are no duplicate columns.
-	2) Through the design of the experiment, 30 volunteers each perfoming 6 activities several iterations. Having averaged by subject and then by activity the resulting dataset has dimensions of [180, 68] (please see rationale for 66 above in the Raw data) where each row represents an observation and only 1 observation is assigned to 1 row. Hence the dataset complies with the 2nd principle: Each observation forms a row.
-	3) The unit of observation (body motion) is 'parsed' within the only table and its design also avoids any duplication of the same data pertinent to body motion. This tackles an issue of having multiple types of observation units in 1 table. Hence the data set is compliant with the 3rd principle of tidy data: Each type of observational unit forms a table.
+
+Resulting data set needs to be tidy (as per the paper of Hadley Wickham, Tidy Data, Journal of Statistical Software August 2014, Volume 59, Issue 10.):
+1) Through the design of the data collection, processing and subsequent recording process each variable is stored in a separate column describing its parameters (e.g., domain, type of acceleration, axes etc). Thus, each variable forms a column and there are no duplicate columns.
+2) Through the design of the experiment, 30 volunteers each perfoming 6 activities several iterations. Having averaged by subject and then by activity the resulting dataset has dimensions of [180, 68] (please see rationale for 66 above in the Raw data) where each row represents an observation and only 1 observation is assigned to 1 row. Hence the dataset complies with the 2nd principle: Each observation forms a row.
+3) The unit of observation (body motion) is 'parsed' within the only table and its design also avoids any duplication of the same data pertinent to body motion. This tackles an issue of having multiple types of observation units in 1 table. Hence the data set is compliant with the 3rd principle of tidy data: Each type of observational unit forms a table.
