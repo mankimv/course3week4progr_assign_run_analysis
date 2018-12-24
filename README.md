@@ -1,5 +1,6 @@
 # course3week4progr_assign_run_analysis
 course 3 week 4 program assignment run_analysis body motion Samsung Galaxy data 
+
 Experimental design and background: 
 
 An experiment was conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto (Smartlab - Non Linear Complex Systems Laboratory
